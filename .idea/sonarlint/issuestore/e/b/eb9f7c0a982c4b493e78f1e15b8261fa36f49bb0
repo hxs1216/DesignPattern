@@ -1,5 +1,5 @@
 
 >squid:S1185"(Remove this method to simply inherit it.(™”” 
+Isquid:S1068"-Remove this unused "cloneName" private field.(äê±üÿÿÿÿ
 Jsquid:S1068".Remove this unused "cloneClass" private field.(ïë÷Ãûÿÿÿÿ
 isquid:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(™”” 
-Isquid:S1068"-Remove this unused "cloneName" private field.(äê±üÿÿÿÿ
