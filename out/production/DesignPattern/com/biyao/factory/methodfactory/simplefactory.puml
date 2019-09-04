@@ -1,25 +1,32 @@
 @startuml
 
-class CheessPizza
-class GreekPizza
-class ChinaPizza
+class BJCheessPizza
+class BJPepperPizza
+class LDCheessPizza
+class LDPepperPizza
 class Pizza {
 void prepare()
 void bake()
 void cut()
 void box()
 }
-Pizza <|-- CheessPizza
-Pizza <|-- GreekPizza
-Pizza <|-- ChinaPizza
+Pizza <|-- BJCheessPizza
+Pizza <|-- BJPepperPizza
+Pizza <|-- LDCheessPizza
+Pizza <|-- LDPepperPizza
 
-class SimpleFactory
-class OrderPizza
-class OrderPizza2
-class OrderPizza3
+class BJOrderPizza
+class LDOrderPizza
 
-SimpleFactory <|-- OrderPizza
-SimpleFactory <|-- OrderPizza2
-SimpleFactory <|-- OrderPizza3
 
+BJCheessPizza <|-- BJOrderPizza
+BJPepperPizza <|-- BJOrderPizza
+LDCheessPizza <|-- LDOrderPizza
+LDPepperPizza <|-- LDOrderPizza
+
+class OrderPizza{
+Pizza createPizza()
+}
+OrderPizza <|-- BJOrderPizza
+OrderPizza <|-- LDOrderPizza
 @enduml

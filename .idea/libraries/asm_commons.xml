@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="asm-commons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/biyao/proxy/cglibproxy/asm-commons.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/biyao/proxy/cglibproxy/asm-tree.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/biyao/proxy/cglibproxy/cglib-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
