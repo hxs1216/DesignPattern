@@ -1,0 +1,27 @@
+@startuml
+Interface House
+abstract HouseBuilder{
+    void buildBasic()
+    void buildWalls()
+    void roofed()
+}
+class HighHouse{
+    void buildBasic()
+    void buildWalls()
+    void roofed()
+}
+class CommonHouse{
+    void buildBasic()
+    void buildWalls()
+    void roofed()
+}
+class HouseDirector{
+    void buildBasic()
+    void buildWalls()
+    void roofed()
+}
+HouseBuilder <|-- HighHouse
+HouseBuilder <|-- CommonHouse
+HighHouse <|-- HouseDirector
+CommonHouse <|-- HouseDirector
+@enduml
