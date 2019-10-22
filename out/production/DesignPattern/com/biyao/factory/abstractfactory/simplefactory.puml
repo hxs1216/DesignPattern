@@ -1,0 +1,37 @@
+@startuml
+
+class BJCheessPizza
+class BJPepperPizza
+class LDCheessPizza
+class LDPepperPizza
+class Pizza {
+void prepare()
+void bake()
+void cut()
+void box()
+}
+Pizza <|-- BJCheessPizza
+Pizza <|-- BJPepperPizza
+Pizza <|-- LDCheessPizza
+Pizza <|-- LDPepperPizza
+
+Interface AbsFactory{
+Pizza createPizza()
+}
+class BJFactory
+class LDFactory
+class OrderPizza
+class OrderPizza2
+
+AbsFactory <|-- BJFactory
+AbsFactory <|-- LDFactory
+
+BJCheessPizza <|-- BJFactory
+BJPepperPizza <|-- BJFactory
+LDCheessPizza <|-- LDFactory
+LDPepperPizza <|-- LDFactory
+
+AbsFactory <|-- OrderPizza
+AbsFactory <|-- OrderPizza2
+
+@enduml

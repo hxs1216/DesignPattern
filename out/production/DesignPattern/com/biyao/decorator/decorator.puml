@@ -1,0 +1,31 @@
+@startuml
+abstract Drink{
+}
+class Coffee{
+}
+class ShortBlack{
+}
+class DeCaf{
+}
+class Espresso{
+}
+class LongBlack{
+}
+Drink <|-- Coffee
+Coffee <|-- ShortBlack
+Coffee <|-- DeCaf
+Coffee <|-- Espresso
+Coffee <|-- LongBlack
+class Decorator{
+}
+class Chocolate{
+}
+class Milk{
+}
+class Soy{
+}
+Drink <|-- Decorator
+Decorator <|-- Chocolate
+Decorator <|-- Milk
+Decorator <|-- Soy
+@enduml

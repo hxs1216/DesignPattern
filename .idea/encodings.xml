@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/com/biyao/builder/AbstractHouse.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/biyao/builder/Client.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/com/biyao/decorator/CoffeeBar.java" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
